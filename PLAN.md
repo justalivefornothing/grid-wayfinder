@@ -37,7 +37,7 @@ src/
     serialize.ts   Grid <-> compact URL-hash string
   ui/
     renderer.ts    Canvas renderer with dirty-cell diffing
-    controls.ts    Toolbar wiring, keyboard shortcuts
+    shell.ts       Toolbar and panel markup, element refs
   main.ts          App state, animation loop, compare mode
   style.css        Topographic theme (custom properties, @fontsource)
 ```
@@ -49,10 +49,10 @@ g + h — all through the same loop and the same heap.
 
 ## Milestones
 
-- [ ] Plan, license, git init
-- [ ] Vite vanilla-ts scaffold + vitest
-- [ ] Core: heap, grid, heuristics, search generator, tests green
-- [ ] Renderer + paint tools + animation controls
-- [ ] Mazes, diagonals, compare mode, URL hash
-- [ ] Build clean, smoke test, screenshot
-- [ ] README, publish
+- [x] Plan, license, git init
+- [x] Vite vanilla-ts scaffold + vitest
+- [x] Core: heap, grid, heuristics, search generator, tests green
+- [x] Renderer + paint tools + animation controls
+- [x] Mazes, diagonals, compare mode, URL hash
+- [x] Build clean, smoke test, screenshot
+- [x] README, publish
