@@ -186,7 +186,7 @@ function renderStats(): void {
     const status = p.root.querySelector<HTMLElement>('[data-status]')!
     const [text, kind] = p.result
       ? p.result.path ? ['Path found', 'ok'] : ['No path — goal is sealed off', 'fail']
-      : p.count === 0 ? ['Ready — press Play', 'idle'] : playing ? ['Searching…', 'live'] : ['Paused', 'idle']
+      : playing ? ['Searching…', 'live'] : p.count === 0 ? ['Ready — press Play', 'idle'] : ['Paused', 'idle']
     status.textContent = text
     status.dataset.kind = kind
   }
