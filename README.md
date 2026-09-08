@@ -11,9 +11,10 @@ see it swell into a perfect circle while A* stays a narrow teardrop.
 
 ## Features
 
-- **Canvas grid** up to 59 × 39 with five brushes: ridge (wall), mud (cost 5),
-  eraser, start, goal. Drag to paint; right-drag erases; grab a marker to move
-  it at any time, including mid-search.
+- **Canvas grid** up to 59 × 39 (the codec accepts any size up to 60 × 40;
+  the presets are odd so mazes fill the whole lattice) with five brushes:
+  ridge (wall), mud (cost 5), eraser, start, goal. Drag to paint; right-drag
+  erases; grab a marker to move it at any time, including mid-search.
 - **Four algorithms from scratch** — BFS, Dijkstra, Greedy best-first, and A*
   — driven by one search loop and one hand-rolled binary heap. A* and Greedy
   take Manhattan, Euclidean, or Chebyshev heuristics.
